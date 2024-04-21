@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/output.css" rel="stylesheet">
+    <style>
+        /* CSS untuk memposisikan form di tengah halaman */
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #556B2F; /* Warna latar belakang */
+        }
+        /* Mengatur lebar maksimum form */
+        .form-container {
+            max-width: 400px;
+            width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #ffffff; /* Warna latar belakang */
+        }
+        /* Mengatur lebar input dan label */
+        .form-group {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        /* Mengatur label */
+        label {
+            flex: 1;
+            margin-right: 10px;
+        }
+        /* Mengatur input */
+        input {
+            flex: 2;
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        /* Mengatur posisi tombol Daftar */
+        .btn-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+        /* Mengatur tampilan tombol Daftar */
+        button[type="submit"] {
+            background-color: #4CAF50; /* Warna latar belakang */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px; /* Membuat sudut tombol lebih bulat */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #9ACD32; /* Warna latar belakang saat tombol dihover */
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section class="relative isolate">
+        <div class="flex flex-wrap flex-col items-center text-center my-8 mx-8 form-container"> <!-- Menambahkan border -->
+            <h1 class="main-title">FORM</h1>
+            <div>
+                <form method="post" class="mt-8">
+                    <div class="form-group">
+                        <label for="name">Nama :</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <p></p>
+                    <div class="form-group">
+                        <label for="nim">NIM :</label>
+                        <input type="text" id="nim" name="nim">
+                    </div>
+                    <p></p>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <p></p>
+                    <div class="form-group">
+                        <label for="password">Password :</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <p></p>
+                    <div class="form-group">
+                        <label for="confirm_password">Konfirmasi Password :</label>
+                        <input type="password" id="confirm_password" name="confirm_password">
+                    </div>
+                    <p></p>
+                    <div class="btn-container">
+                        <button type="submit">Daftar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        
+    <script src="js/script.js"></script>
+</body>
+
+</html>
